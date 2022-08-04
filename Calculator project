@@ -1,0 +1,78 @@
+import java.util.*;
+ class akr {
+
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+
+
+        char operation;
+        int num1;
+        int num2;
+
+        System.out.print("For Add Use '+'"+"   ");
+        System.out.println("For Sub Use '-'");
+        System.out.print("For Mul Use '*'"+"   ");
+        System.out.println("For Div Use '/'");
+        System.out.print("For Pow Use '^'"+"   ");
+        System.out.println("For cos Use 'c'");
+        System.out.print("For sin Use 's'"+"   ");
+        System.out.println("For tan Use 't'\n");
+        System.out.println("NOTE: IF YOU USE SIN, COS, TAN USE '0' AS A SECOND NUMBER\n");
+
+        System.out.print("Enter First Number"+" "+":"+" \n");
+
+        num1 = (int) scan.nextDouble();
+
+        System.out.print("Enter Operation"+" "+":"+" \n");
+
+        operation = scan.next().charAt(0);
+
+        System.out.print("Enter Second Number"+" "+":"+" \n");
+
+        num2 = (int) scan.nextDouble();
+
+        if (operation == '+')
+        {
+            System.out.println("your answer is : " + (num1 + num2));
+        }
+        if (operation == '-')
+        {
+            System.out.println("your answer is : " + (num1 - num2));
+        }
+        if (operation == '/')
+        {
+            System.out.println("your answer is : " + (num1 / num2));
+        }
+        if (operation == '*')
+        {
+            System.out.println("your answer is : " + (num1 * num2));
+        }
+        if(operation == '^'){
+            System.out.println("your answer is : "+ ((int)Math.pow(num1,num2)));
+        }
+        if(operation == 's'){
+            double a = Math.toRadians(num1);
+            double sin = Math.sin(a);
+            System.out.println("your answer is : "+ sin);
+
+        }
+        if(operation == 'c'){
+            double a = Math.toRadians(num1);
+            double cos = Math.cos(a);
+            System.out.println("your answer is : "+ cos);
+
+        }
+        if(operation == 't'){
+            double a = Math.toRadians(num1);
+            double tan = Math.tan(a);
+            System.out.println("your answer is : "+ tan);
+
+        }
+
+
+
+
+
+
+    }
+}
